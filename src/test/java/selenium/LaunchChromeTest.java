@@ -11,7 +11,7 @@ public class LaunchChromeTest {
 
 	@Test
 	public void browsermethod() {
-		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Selenium/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "../../../../chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.navigate().to("https://www.amazon.in");
